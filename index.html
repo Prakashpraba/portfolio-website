@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/f14839196c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo3.png" class="logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Certificates</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="headertext">
+                    <p>Python Developer</p>
+                    <h1>Ahoy! I am <span> Prakash </span> <br>from Chennai </h1>
+                </div>
+            </div>
+        </div>
+<!------------------------------------About------------------------------------------->        
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="aboutcol1">
+                        <img src="images/user about.jpg">
+                    </div>
+                    <div class="aboutcol2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p>I am excited to introduce myself as a Python developer eager to dive into the world of software development. 
+                            As a recent graduate with a strong foundation in Python programming, I am passionate about turning lines of code into innovative solutions that make a real impact. 
+                            During my academic journey and personal projects, I have honed my skills in Python, working with libraries and frameworks like Django, Flask, and NumPy.</p>
+                        <div class="tabtitles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Python:Django and Flask</span><br>Web Apps development</li>
+                                <li><span>HTML|CSS|Javascript</span><br>Web Pages development</li>
+                                <li><span>Machine Learning</span><br>AI influenced App development</li>
+                                <li><span>Power BI</span><br>Data Analytics</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>Bachelor of Engineering in Computer Science</span><br>2019-2023<br>VELS University</li>
+                                <li><span>Higher Secondary(12th)</span><br>2018-2019<br>SRM Matriculation</li>
+                                <li><span>Secondary(10th)</span><br>2016-2017<br>RKM Matriculation</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!------------------------------------Services------------------------------------------->
+        <div id="Certificates">
+            <div class="container">
+                <h1 class="subtitle">My Certificates</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-chart-area"></i>
+                        <h2>Data Analytics</h2>
+                        <p>Getting Started with Data Analytics on AWS<br> 0ct 2022</p>
+                        <a href="#">View certificate</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-python"></i>
+                        <h2>Python Programming</h2>
+                        <p>Programming using python on Hackerrank<br>Jan 2022</p>
+                        <a href="#">View certificate</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-hashtag"></i>
+                        <h2>SEO foundation</h2>
+                        <p>Fundamentals of SEO on LinkedInlearing<br>Apr 2022</p>
+                        <a href="#">View certificate</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links") 
+            var tabcontents = document.getElementsByClassName("tab-contents")
+            
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+    </body>
+</html>

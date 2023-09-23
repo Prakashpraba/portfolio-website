@@ -1,2 +1,2 @@
 # portfolio-website
-A portfolio website using Python
+A portfolio website using Html, CSS and Javascript
